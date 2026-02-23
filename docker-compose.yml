@@ -4,11 +4,11 @@ services:
   backend:
     build: .
     ports:
-      - "3000:3000"
+      - "8000:8000"
     environment:
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - GROQ_API_KEY=${GROQ_API_KEY}
     volumes:
-      - ./.env:/app/.env
+      - ./.env:/app/backend-ts/.env
     restart: unless-stopped
 
   frontend:

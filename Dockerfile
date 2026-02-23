@@ -1,17 +1,17 @@
-FROM python:3.10-slim
+FROM node:18-alpine
 
 WORKDIR /app
 
 # Install dependencies
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY backend-ts/package*.json ./backend-ts/
+WORKDIR /app/backend-ts
+RUN npm install
 
 # Copy application code
-COPY backend/ ./backend/
-COPY .env.example ./
+COPY backend-ts/ ./backend-ts/
 
 # Expose port
 EXPOSE 8000
 
 # Run the application
-CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["npm", "run", "dev"]
