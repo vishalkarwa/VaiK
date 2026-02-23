@@ -1,0 +1,45 @@
+{
+  "patient_id": "Patient002",
+  "drug": "CLOPIDOGREL",
+  "timestamp": "2024-01-15T00:00:00Z",
+  "risk_assessment": {
+    "risk_label": "Toxic",
+    "confidence_score": 0.98,
+    "severity": "high"
+  },
+  "pharmacogenomic_profile": {
+    "primary_gene": "CYP2C19",
+    "diplotype": "*2/*2",
+    "phenotype": "PM",
+    "detected_variants": [
+      {
+        "rsid": "rs4244285",
+        "pos": "22:42524163",
+        "alt": "A",
+        "info": {
+          "STAR": "*2",
+          "GENE": "CYP2C19"
+        }
+      }
+    ]
+  },
+  "clinical_recommendation": {
+    "dose_adjustment": "Avoid clopidogrel. Use alternative antiplatelet agents (prasugrel, ticagrelor).",
+    "alternative_drugs": ["PRASUGREL", "TICAGRELOR"],
+    "cpic_guideline_reference": "CPIC Guidelines for Clopidogrel and CYP2C19 - https://www.pharmgkb.org/documents/pa165990037"
+  },
+  "llm_generated_explanation": {
+    "summary": "This patient has a poor metabolizer (PM) phenotype for CYP2C19, indicated by the *2/*2 diplotype. They have severely reduced or absent CYP2C19 enzyme activity and cannot effectively activate clopidogrel.",
+    "mechanism": "CYP2C19*2 creates a defective splice site that results in a non-functional enzyme. Poor metabolizers have minimal to no ability to convert clopidogrel to its active metabolite, leading to inadequate platelet inhibition and increased risk of cardiovascular events.",
+    "evidence": [
+      "CPIC Guideline: Clopidogrel and CYP2C19 (https://www.pharmgkb.org/documents/pa165990037)",
+      "FDA Label: Clopidogrel (Plavix) - Boxed Warning for CYP2C19 poor metabolizers",
+      "PharmGKB: CYP2C19 Clinical Annotations (https://www.pharmgkb.org/gene/PA124)"
+    ]
+  },
+  "quality_metrics": {
+    "vcf_parsing_success": true,
+    "num_variants_parsed": 8,
+    "notes": "Successfully parsed VCF. CYP2C19 *2/*2 diplotype inferred from homozygous alternate call at rs4244285."
+  }
+}

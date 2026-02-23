@@ -1,0 +1,54 @@
+{
+  "patient_id": "Patient003",
+  "drug": "CODEINE",
+  "timestamp": "2024-01-15T00:00:00Z",
+  "risk_assessment": {
+    "risk_label": "Adjust Dosage",
+    "confidence_score": 0.90,
+    "severity": "moderate"
+  },
+  "pharmacogenomic_profile": {
+    "primary_gene": "CYP2D6",
+    "diplotype": "*4/*10",
+    "phenotype": "IM",
+    "detected_variants": [
+      {
+        "rsid": "rs3892097",
+        "pos": "10:94842162",
+        "alt": "G",
+        "info": {
+          "STAR": "*4",
+          "GENE": "CYP2D6"
+        }
+      },
+      {
+        "rsid": "rs1065852",
+        "pos": "10:94847028",
+        "alt": "A",
+        "info": {
+          "STAR": "*10",
+          "GENE": "CYP2D6"
+        }
+      }
+    ]
+  },
+  "clinical_recommendation": {
+    "dose_adjustment": "Use caution. Consider 50% of usual codeine dose and monitor for analgesia. Alternative: non-opioid analgesics.",
+    "alternative_drugs": ["HYDROMORPHONE", "MORPHINE", "OXYCODONE"],
+    "cpic_guideline_reference": "CPIC Guidelines for Codeine and CYP2D6 - https://www.pharmgkb.org/documents/pa164743470"
+  },
+  "llm_generated_explanation": {
+    "summary": "This patient has an intermediate metabolizer (IM) phenotype for CYP2D6, indicated by the *4/*10 diplotype. They have reduced enzyme activity and may experience suboptimal analgesia from codeine.",
+    "mechanism": "CYP2D6*4 is a null allele causing complete loss of enzyme function, while *10 is a decreased function allele with reduced activity. The combination results in intermediate metabolizer status, reducing codeine-to-morphine conversion.",
+    "evidence": [
+      "CPIC Guideline: Codeine and CYP2D6 (https://www.pharmgkb.org/documents/pa164743470)",
+      "PharmGKB: CYP2D6 Clinical Annotations (https://www.pharmgkb.org/gene/PA128)",
+      "FDA Drug Label: Codeine (contains pharmacogenomic warning)"
+    ]
+  },
+  "quality_metrics": {
+    "vcf_parsing_success": true,
+    "num_variants_parsed": 11,
+    "notes": "Successfully parsed VCF. CYP2D6 *4/*10 diplotype constructed from heterozygous calls at rs3892097 and rs1065852."
+  }
+}

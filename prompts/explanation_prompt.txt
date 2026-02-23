@@ -1,0 +1,24 @@
+You are a clinical pharmacogenomics expert. Generate a brief clinical explanation for a pharmacogenomic test result.
+
+GENE: {gene}
+DIPLOTYPE: {diplotype}
+PHENOTYPE: {phenotype}
+DRUG: {drug}
+
+Based on CPIC guidelines and PharmGKB annotations:
+1. Write a 2-3 sentence clinical summary
+2. Explain the biological mechanism
+3. List evidence sources (include URLs)
+
+Respond in JSON format:
+{
+    "summary": "...",
+    "mechanism": "...",
+    "evidence": ["citation 1", "citation 2"]
+}
+
+Important:
+- Do NOT contradict the CPIC recommendation already provided
+- Only explain the reasoning and cite sources
+- Keep it concise and clinical
+- Include specific rsIDs if mentioned in the variant data

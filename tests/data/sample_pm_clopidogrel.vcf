@@ -1,0 +1,21 @@
+##fileformat=VCFv4.2
+##fileDate=20240115
+##source=PharmaGuard-TestData
+##reference=GRCh38
+##INFO=<ID=GENE,Number=1,Type=String,Description="Gene symbol">
+##INFO=<ID=STAR,Number=.,Type=String,Description="CYP star allele">
+##INFO=<ID=RS,Number=.,Type=String,Description="dbSNP rsID">
+##INFO=<ID=CLNSIG,Number=1,Type=String,Description="Clinical significance">
+##INFO=<ID=PHENO,Number=1,Type=String,Description="Associated phenotype">
+##SAMPLE=<ID=Patient002,SampleName=Patient002>
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	Patient002
+22	42524163	rs4244285	G	A	.	PASS	GENE=CYP2C19;STAR=*2;RS=rs4244285;CLNSIG=Pathogenic	GT:DP	1/1:150
+19	47570385	rs4986893	C	T	.	PASS	GENE=CYP2C19;STAR=*3;RS=rs4986893;CLNSIG=Pathogenic	GT:DP	./.:0
+22	42526697	rs12248560	C	T	.	PASS	GENE=CYP2C19;STAR=*17;RS=rs12248560;CLNSIG=Benign	GT:DP	./.:0
+10	94781259	rs1051730	T	C	.	PASS	GENE=CYP2D6;STAR=*1;RS=rs1051730;CLNSIG=Benign	GT:DP	0/0:120
+10	94781885	rs28371725	G	T	.	PASS	GENE=CYP2D6;STAR=*2;RS=rs28371725;CLNSIG=Benign	GT:DP	0/0:100
+16	56711652	rs1051730	T	C	.	PASS	GENE=SLCO1B1;STAR=*1;RS=rs1051730;CLNSIG=Benign	GT:DP	0/0:80
+12	21892482	rs1142345	T	G	.	PASS	GENE=TPMT;STAR=*1;RS=rs1142345;CLNSIG=Benign	GT:DP	0/0:90
+1	97545623	rs3918290	C	T	.	PASS	GENE=DPYD;STAR=*1;RS=rs3918290;CLNSIG=Benign	GT:DP	0/0:110

@@ -1,0 +1,44 @@
+{
+  "patient_id": "Patient001",
+  "drug": "CLOPIDOGREL",
+  "timestamp": "2024-01-15T00:00:00Z",
+  "risk_assessment": {
+    "risk_label": "Safe",
+    "confidence_score": 0.95,
+    "severity": "none"
+  },
+  "pharmacogenomic_profile": {
+    "primary_gene": "CYP2C19",
+    "diplotype": "*1/*1",
+    "phenotype": "NM",
+    "detected_variants": [
+      {
+        "rsid": "rs4244285",
+        "pos": "22:42524163",
+        "alt": "A",
+        "info": {
+          "STAR": "*2",
+          "GENE": "CYP2C19"
+        }
+      }
+    ]
+  },
+  "clinical_recommendation": {
+    "dose_adjustment": "Standard clopidogrel dosing. No adjustment needed.",
+    "alternative_drugs": [],
+    "cpic_guideline_reference": "CPIC Guidelines for Clopidogrel and CYP2C19 - https://www.pharmgkb.org/documents/pa165990037"
+  },
+  "llm_generated_explanation": {
+    "summary": "This patient has a normal metabolizer (NM) phenotype for CYP2C19, indicated by the *1/*1 diplotype. They are expected to activate clopidogrel normally and achieve standard antiplatelet efficacy.",
+    "mechanism": "CYP2C19 encodes a cytochrome P450 enzyme responsible for the bioactivation of clopidogrel. Normal metabolizers convert clopidogrel to its active metabolite efficiently, providing standard platelet inhibition.",
+    "evidence": [
+      "CPIC Guideline: Clopidogrel and CYP2C19 (https://www.pharmgkb.org/documents/pa165990037)",
+      "PharmGKB: CYP2C19 Clinical Annotations (https://www.pharmgkb.org/gene/PA124)"
+    ]
+  },
+  "quality_metrics": {
+    "vcf_parsing_success": true,
+    "num_variants_parsed": 8,
+    "notes": "Successfully parsed VCF. CYP2C19 *1/*1 diplotype inferred from homozygous reference call at rs4244285."
+  }
+}

@@ -1,0 +1,31 @@
+drug,gene,phenotype,risk_label,recommendation,severity,cpic_reference_url,notes
+CODEINE,CYP2D6,PM,Toxic,"Avoid codeine. Use non-opioid analgesics. If opioid necessary, consider morphine or non-opioids.",high,https://www.pharmgkb.org/documents/pa164743470,CPIC: Poor metabolizers have no benefit from codeine (cannot convert to morphine)
+CODEINE,CYP2D6,IM,Adjust Dosage,"Use caution. Consider 50% of usual codeine dose and monitor for analgesia. Alternative: non-opioid analgesics.",moderate,https://www.pharmgkb.org/documents/pa164743470,CPIC: Intermediate metabolizers may have reduced efficacy
+CODEINE,CYP2D6,NM,Safe,"Standard dosing. No adjustment needed.",none,https://www.pharmgkb.org/documents/pa164743470,CPIC: Normal metabolizers convert codeine to morphine normally
+CODEINE,CYP2D6,RM,Safe,"Standard dosing. No adjustment needed.",none,https://www.pharmgkb.org/documents/pa164743470,CPIC: Rapid metabolizers may have normal response
+CODEINE,CYP2D6,URM,Toxic,"Avoid codeine. Use alternative analgesics. Ultra-rapid metabolizers may experience toxicity.",critical,https://www.pharmgkb.org/documents/pa164743470,CPIC: URM at risk for morphine toxicity
+CLOPIDOGREL,CYP2C19,PM,Toxic,"Avoid clopidogrel. Use alternative antiplatelet agents (prasugrel, ticagrelor).",high,https://www.pharmgkb.org/documents/pa165990037,CPIC: Poor metabolizers cannot activate clopidogrel
+CLOPIDOGREL,CYP2C19,IM,Adjust Dosage,"Consider alternative antiplatelets. If clopidogrel used, consider higher loading dose.",moderate,https://www.pharmgkb.org/documents/pa165990037,CPIC: Intermediate metabolizers have reduced activation
+CLOPIDOGREL,CYP2C19,NM,Safe,"Standard clopidogrel dosing.",none,https://www.pharmgkb.org/documents/pa165990037,CPIC: Normal metabolizers activate normally
+CLOPIDOGREL,CYP2C19,RM,Safe,"Standard dosing. No adjustment needed.",none,https://www.pharmgkb.org/documents/pa165990037,CPIC: Rapid metabolizers have adequate activation
+CLOPIDOGREL,CYP2C19,URM,Safe,"Standard dosing. May have increased platelet inhibition.",none,https://www.pharmgkb.org/documents/pa165990037,CPIC: URM may have enhanced response
+WARFARIN,CYP2C9,PM,Adjust Dosage,"Reduce warfarin dose by 30-50%. Frequent INR monitoring required.",moderate,https://www.pharmgkb.org/documents/pa164871035,CPIC: Poor metabolizers require lower doses
+WARFARIN,CYP2C9,IM,Adjust Dosage,"Reduce warfarin dose by 15-25%. Monitor INR closely.",moderate,https://www.pharmgkb.org/documents/pa164871035,CPIC: Intermediate metabolizers need dose reduction
+WARFARIN,CYP2C9,NM,Safe,"Standard warfarin dosing. Target INR 2-3.",none,https://www.pharmgkb.org/documents/pa164871035,CPIC: Normal metabolizers
+WARFARIN,CYP2C9,RM,Unknown,"Limited data. Standard dosing with careful monitoring.",low,https://www.pharmgkb.org/documents/pa164871035,CPIC: Rare phenotype
+WARFARIN,CYP2C9,URM,Unknown,"Limited data. May require higher doses.",low,https://www.pharmgkb.org/documents/pa164871035,CPIC: Rare phenotype
+SIMVASTATIN,SLCO1B1,PM,Toxic,"Avoid simvastatin. Use alternate statin (pravastatin, rosuvastatin). If simvastatin required, limit to 20mg.",high,https://www.pharmgkb.org/documents/pa164491475,CPIC: Poor metabolizers at high risk for myopathy
+SIMVASTATIN,SLCO1B1,IM,Adjust Dosage,"Use caution. If simvastatin needed, limit to 40mg. Consider alternate statin.",moderate,https://www.pharmgkb.org/documents/pa164491475,CPIC: Intermediate metabolizers have increased risk
+SIMVASTATIN,SLCO1B1,NM,Safe,"Standard simvastatin dosing.",none,https://www.pharmgkb.org/documents/pa164491475,CPIC: Normal metabolizers
+SIMVASTATIN,SLCO1B1,RM,Safe,"Standard dosing.",none,https://www.pharmgkb.org/documents/pa164491475,CPIC: Rapid metabolizers
+SIMVASTATIN,SLCO1B1,URM,Safe,"Standard dosing.",none,https://www.pharmgkb.org/documents/pa164491475,CPIC: Ultra-rapid metabolizers
+AZATHIOPRINE,TPMT,PM,Toxic,"Avoid azathioprine. Use alternative immunosuppressant (mycophenolate mofetil).",critical,https://www.pharmgkb.org/documents/pa164493395,CPIC: PM have severe myelosuppression risk
+AZATHIOPRINE,TPMT,IM,Adjust Dosage,"Reduce starting dose by 30-70%. Monitor blood counts closely.",high,https://www.pharmgkb.org/documents/pa164493395,CPIC: IM require significant dose reduction
+AZATHIOPRINE,TPMT,NM,Safe,"Standard dosing. Routine monitoring.",none,https://www.pharmgkb.org/documents/pa164493395,CPIC: NM have normal TPMT activity
+AZATHIOPRINE,TPMT,RM,Safe,"Standard dosing.",none,https://www.pharmgkb.org/documents/pa164493395,CPIC: RM may have increased activity
+AZATHIOPRINE,TPMT,URM,Safe,"Standard dosing. May require higher doses.",none,https://www.pharmgkb.org/documents/pa164493395,CPIC: URM
+FLUOROURACIL,DPYD,PM,Toxic,"Avoid 5-FU. Use alternative therapy (capecitabine not recommended). Dose reduction not reliable.",critical,https://www.pharmgkb.org/documents/pa164493428,CPIC: PM have severe toxicity risk (death)
+FLUOROURACIL,DPYD,IM,Adjust Dosage,"Reduce 5-FU dose by 50%. Monitor for toxicity.",high,https://www.pharmgkb.org/documents/pa164493428,CPIC: IM have significant toxicity risk
+FLUOROURACIL,DPYD,NM,Safe,"Standard 5-FU dosing.",none,https://www.pharmgkb.org/documents/pa164493428,CPIC: NM have normal DPYD activity
+FLUOROURACIL,DPYD,RM,Safe,"Standard dosing.",none,https://www.pharmgkb.org/documents/pa164493428,CPIC: RM
+FLUOROURACIL,DPYD,URM,Safe,"Standard dosing.",none,https://www.pharmgkb.org/documents/pa164493428,CPIC: URM may have enhanced clearance
